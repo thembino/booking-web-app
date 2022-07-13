@@ -1,0 +1,39 @@
+.featuredProp{
+    width: 100%;
+    max-width:1024px ;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.fpItem{
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fpImg{
+    width: 100%;
+}
+
+.Name{
+    font-size: medium;
+    font-weight: 800;
+}
+.City{
+    font-size: medium;
+}
+
+.price{
+    font-weight: 800;
+}
+
+.rating>button{
+    background-color: rgb(0, 71, 236);
+    color: white;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    border-radius: 2px;
+    margin-right: 10px;
+    font-weight: bold;
+}
