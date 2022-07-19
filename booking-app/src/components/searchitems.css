@@ -1,0 +1,101 @@
+.SearchItems{
+   border: 1px solid lightgrey;
+   padding: 10px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+   margin-bottom: 20px;
+   margin-right: 40px;
+}
+
+.img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+
+.Title{
+    font-size: 20px;
+    color: #087bff
+}
+.Distance{
+    font-size: 12px;
+}
+.subtitle{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cancelOp{
+    font-weight: bold;
+    color: darkgreen;
+    
+}
+.cancelSubtitle{
+    font-weight: bold;
+    padding: 4px;
+    color:darkgreen;
+    max-width: max-content;
+    border-radius: 4px;
+}
+
+.TaxiOp{
+    font-size: 12px;
+    background-color: crimson;
+    color: white;
+    width: max-content;
+    padding: 4px;
+    border-radius: 2px;
+}
+.Details{
+    flex:1;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.Rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Rating>span{
+    font-weight: bold;
+}
+
+.Rating>button{
+    background-color: #004fa9;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+}
+
+.DetailText{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.price{
+    font-size: 20px;
+    color: grey;
+
+}
+
+.Checkbtn{
+    background-color: #004fa9;
+    color: white;
+    font-weight:500;
+    padding: 10px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

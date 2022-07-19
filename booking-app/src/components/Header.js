@@ -6,6 +6,7 @@ import { DateRange } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; 
 import 'react-date-range/dist/theme/default.css'; 
 import {format} from 'date-fns'
+import { useNavigate } from 'react-router-dom';
 
 
 const  Header=({type})=> {
@@ -15,12 +16,20 @@ const  Header=({type})=> {
     children:0,
     rooms:1
   })
+
+  const [destination,setDestination] = useState("")
   const [opendate,setOpenDate] = useState(false)
 const [date,SetDate] = useState([{
   startDate:new Date(),
   endDate:new Date(),
   key: 'selection'
 }]);
+
+const navigate = useNavigate();
+const handleSeacrh = () =>{
+  navigate("/hotels", {state:{destination,date,options}})
+}
+
 
 const handleOption =(name, operations) =>{
 setOptions((prev)=>{
@@ -60,7 +69,8 @@ setOptions((prev)=>{
         <div className="Search">  
           <input type="text"
           placeholder="where are you going ?"
-          className="headerInput"/>
+          className="headerInput"
+          onChange={e=>setDestination(e.target.value)}/>
         
         <span onClick={()=>setOpenDate(!opendate)} className="searchtext"><FontAwesomeIcon icon={faCalendarDay} /> {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(date[0].endDate, "MM/dd/yyyy")}`}
           {opendate && <DateRange
@@ -69,6 +79,7 @@ setOptions((prev)=>{
             moveRangeOnFirstSelection={false}
             ranges={date}
             className="date"
+            minDate={new Date()}
           />}
         </span>
             <div className="SearchItem">
@@ -105,7 +116,7 @@ setOptions((prev)=>{
             </div>
             
             <div className="SearchItem">
-           <button className='Searchbtn'>Search</button> 
+           <button className='Searchbtn' onClick={handleSeacrh}>Search</button> 
         </div>
             </div>
             </>}
