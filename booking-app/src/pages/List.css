@@ -19,7 +19,7 @@
     margin-left: 20px;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgb(248, 157, 0);
+    background-color: rgb(20, 106, 255);
     position: sticky;
     top: 10px;
     height: max-content;
@@ -39,15 +39,10 @@
     font-size: larger;
     cursor: pointer;
     padding: 10px;
-    background-color: rgb(20, 106, 255);
-    box-shadow: 0 4px #999;
+    background-color: rgb(0, 63, 172);
+
 }
 
-.listSearch>button:active{
-    box-shadow: 0 2.5px #666;
-    transform: translateY(4px);
-    transition: 200ms;
-}
 
 .listItem>input{
     height: 40px;
@@ -81,8 +76,10 @@ padding: 10px;
     font-style: 12px;
 }
 .isOptionOutput{
+    border-radius: 2px;
     display: flex;
-    
+    border: none;
+    outline: none;
     width: 50px;
 }
 .listResult{

@@ -1,5 +1,5 @@
 .Header{
-    background-color:#ff9800;
+    background-color: rgb(20, 106, 255);
     color:white;
     display:flex;
     justify-content:center;
@@ -39,10 +39,10 @@
 }
 
 .HeaderButton{
-    background-color: black;
+    background-color:  rgb(1, 7, 18);
     color:white;
     border-style: none;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 10px 10px;
 }
 
@@ -54,9 +54,9 @@
 .Search{
     height: 30px;
     background-color:white;
-    border: 3px solid #ff9800;
+    border: 3px solid rgb(20, 106, 255);
     display:flex;
-    color: #ff9800;
+    color: #545454;
     align-items:center;
     justify-content: space-around;
     padding: 10px 0px;
@@ -70,7 +70,7 @@
 .headerInput{
     border: none;
     background-color: white;
-    color:#ff9800;
+    color: rgb(20, 106, 255);
     opacity: 80%;
     padding:10px 0px;
     outline: none;
@@ -94,7 +94,7 @@
 
 .Searchbtn{
     color:white;
-    background-color: #ff9800;
+    background-color: rgb(20, 106, 255);
     border:none;
     border-radius: 2px;
     padding:5px 4px;
@@ -111,7 +111,7 @@
     position: absolute;
     top: 50px;
     background-color: white;
-    color: #ff9800;
+    color:  rgb(20, 106, 255);
     border-radius: 9px;
     box-shadow: 0px 0px 10px -5px rgba(0, 0, 0,0.4);
     z-index: 1;
@@ -135,9 +135,10 @@
 }
 
 .optionCounter{
-    background-color: #ff9800;
+    background-color: rgb(20, 106, 255);
     border-radius: 2px;
     box-shadow: #ff5100;
     border: none;
     z-index: 1;
+    color: white;
 }

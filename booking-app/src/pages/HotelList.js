@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRightLong,faLeftLong,faCancel } from '@fortawesome/free-solid-svg-icons';
-import React,{useState}  from'react'
+
+import React from'react'
 import Header from '../components/Header'
 import Navbar from '../components/navbar'
 import MailList from './MailList'
@@ -8,9 +7,6 @@ import './Hotel.css';
 
 
 function HotelList() {
-
-    // const [picture,SetPicture]  = useState(0);
-    // const [open,SetOpen]  = useState(false);
     const photos=[
             {
                 src:"https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2021/03/THERASIA-RESORT-SEA-SPA-VULCANO.jpg?ssl=1"
@@ -49,29 +45,18 @@ function HotelList() {
             },
     ]
 
-    // const handleOpen= (i) =>{
-    //     SetPicture(i);
-    //     SetOpen(true);
-    // }
+
   return (
     <div>
         <Navbar/>
         <Header type="list"/>
         <div className='HotelContainer'> 
-        {/* {open &&<div className='slider'>
-            <FontAwesomeIcon icon={faLeftLong} />
-            <div className='slideWrapper'>
-                <img src={photos[picture].src} alt=''className='sliderImage'/>
-            </div>
-            <FontAwesomeIcon icon={faRightLong} /> 
-            <FontAwesomeIcon icon={faCancel} />
-            </div>} */}
-            <button className='booking'>book now</button>
-            <div className='Wrapper'> 
-           
+            
+            <div className='Wrapper'>        
                 <h1 className='title'>Grand Hotel</h1>
+                <button className='booking'>book now</button>
                 <div className='hotelAddress'>
-                    <FontAwesomeIcon icon=''/>
+                  
                     <span>Elton strt 125 new york</span>
                 </div>
                 <div className='hotelDistance'>
